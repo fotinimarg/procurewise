@@ -9,7 +9,6 @@ import { Trash2, Pencil, PlusCircle, SquarePen, Filter, Share } from 'lucide-rea
 import DatePicker from 'react-datepicker';
 import Pagination from '../../components/Pagination';
 import ConfirmationModal from "../../components/ConfirmationModal";
-import { set } from 'mongoose';
 
 const SuppliersManagement = () => {
     const [suppliers, setSuppliers] = useState([]);
