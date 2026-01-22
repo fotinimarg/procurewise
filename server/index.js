@@ -22,7 +22,10 @@ app.use(express.urlencoded({ extended: false }))
 app.use(
     cors({
         credentials: true,
-        origin: 'http://localhost:5173'
+        origin: [
+            "https://procurewise-tawny.vercel.app",
+            "http://localhost:5173"
+        ],
     })
 )
 
