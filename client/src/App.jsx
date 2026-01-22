@@ -11,8 +11,8 @@ import { CartContextProvider } from '../context/CartContext';
 import Footer from './components/Footer';
 import FloatingButton from './components/FloatingButton';
 
-axios.defaults.baseURL = 'http://localhost:8000/api'
-axios.defaults.withCredentials = true
+axios.defaults.baseURL = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
+axios.defaults.withCredentials = true;
 
 function App() {
   const { auth } = useContext(AuthContext);
